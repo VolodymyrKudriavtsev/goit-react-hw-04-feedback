@@ -22,7 +22,7 @@ const App = () => {
 
   const onLeaveFeedback = feedbackName => {
     setState(prevState => {
-      return { ...state, [feedbackName]: prevState[feedbackName] + 1 };
+      return { ...prevState, [feedbackName]: prevState[feedbackName] + 1 };
     });
   };
 
